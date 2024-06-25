@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script type="text/javascript" src="js/sketch.js"></script>
+    <title>Haruto Fukutome</title>
+</head>
+<body id="body">
+
+    <header id="header">
+        Haruto's Portfolio!!<!--span id="humburger">≡</span-->
+    </header>
+
+    <div id="backFilter"></div>
+
+    <section id="main">
+        <div class="headerSpace"></div>
+        <div id="contents">
+        <div class="contents" onclick="showContents(0)">
+            <div class="photo" style="background-image: url('img/webeat1.webp');"></div>
+            <div class="explain">WEB<br>DEVELOPMENT</div>
+        </div>
+        <div class="contents" onclick="showContents(1)">
+            <div class="photo" style="background-image: url('img/painting1.jpg');"></div>
+            <div class="explain">DRAWING<br>&PAINTING</div>
+        </div>
+        <div class="contents" onclick="showContents(2)">
+            <div class="photo" style="background-image: url('img/visual1.png');"></div>
+            <div class="explain">VISUAL<br>PROGRAMING</div>
+        </div>
+        <div class="contents" onclick="showContents(3)">
+            <div class="photo" style="background-image: url('img/music1.jpg');"></div>
+            <div class="explain">GAME<br>MUSIC</div>
+        </div>
+        <div class="contents" onclick="showContents(4)">
+            <div class="photo" style="background-image: url('img/profile.jpg');"></div>
+            <div class="explain">MY<br>PROFILE</div>
+        </div>
+        <div id="content_display">
+            <div id="content_text">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <section id="photoPickup">
+        <div id="closeBtn" onclick="closePickup()">✕</div>
+        <img src="" id="pickupImg">
+    </section>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
